@@ -6,5 +6,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/anim_api.js"></script>
     </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Youtube Videos</h1>
+                <p>Search all Youtube videos</p>
+            </header>
+
+            <section>
+                <form id="search-form" name="search-form" onsubmit="return search()">
+                    <div class="fieldcontainer">
+                        <input type="search" id="query" class="seearch-field" placeholder="Search Youtube...">
+                        <input type="submit" name="search-btn" value="">
+                    </div>
+                </form>
+
+                <ul id="results"></ul>
+                <div id="buttons"> </div>   
+            </section>
+        </div>
+    </body>
 </html>
 
